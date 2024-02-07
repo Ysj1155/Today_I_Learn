@@ -1,4 +1,24 @@
-<!DOCTYPE html>
+{% extends "myserver/base.html" %}
+{% load static i18n humanize base_tag landing_tag %}
+
+{% block title %}{{page_title}}{% endblock %}
+
+{% block page_title %}
+<!-- start page title -->
+<div class="row">
+    <div class="col-12">
+        <div class="page-title-box">
+            <div class="page-title-right">
+                <a class="btn btn-success mb-2" href="{% url 'administrator:buildblock-property-create' %}">ADD BUILDBLOCK PROPERTY</a>
+            </div>
+
+            <h4 class="page-title">{{page_title}}</h4>
+        </div>
+    </div>
+</div>
+<!-- end page title -->
+{% endblock page_title %}
+
 <html lang="ko">
 <head>
     <meta charset="UTF-8">

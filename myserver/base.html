@@ -1,0 +1,104 @@
+{% load static i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>{% block title %}{{page_title|default:"Services"}}{% endblock %} | {% trans 'BuildBlock Administrator' %}</title>
+    <meta name="description" content="BuildBlock Administrator">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="BuildBlock" />
+
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="{% static 'base/favi/favicon.ico' %}">
+    <!-- External CSS -->
+
+    <!-- Main CSS -->
+    {% block main_css %}
+    <link href="{% static 'base/css/icons.min.css' %}" rel="stylesheet" type="text/css" />
+    <link href="{% static 'dashboard/css/basic_dark.css' %}" rel="stylesheet" type="text/css" id="main-style-container" />
+    <link href="{% static 'dashboard/css/administrator.css' %}" rel="stylesheet" type="text/css" />
+    {% endblock main_css %}
+
+    <!-- App CSS -->
+    {% block app_css %}
+    {% endblock app_css %}
+
+    <!-- External JS Top -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body class="loading">
+    <div class="wrapper">
+        <div>
+            {% block sidebar %}
+            {% include 'administrator/partials/left_sidebar.html' %}
+            {% endblock sidebar %}
+        </div>
+
+        <div class="content-page">
+            <div class="content">
+                <div>
+                    {% block topbar %}
+                    {% include 'administrator/partials/topbar.html' %}
+                    {% endblock topbar %}
+                </div>
+
+                {% if messages %}
+                    {% include "administrator/partials/messages.html" with messages=messages %}
+                {% endif %}
+                {% if form.errors %}
+                    {% include "base/errors.html" with errors=form.non_field_errors %}
+                    {% for field in form %}
+                        {% include "base/errors.html" with errors=field.errors %}
+                    {% endfor %}
+                {% endif %}
+
+                <!-- Start Content-->
+                <div class="container-fluid">
+                    <!-- start page title -->
+                    {% block page_title %}
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box">
+                                <h4 class="page-title">{{page_title}}</h4>
+                            </div>
+                        </div>
+                    </div>
+                    {% endblock page_title %}
+                    <!-- end page title -->
+
+                    {% block content %}{% endblock content %}
+                </div>
+                <!-- container -->
+
+            </div>
+            <!-- content -->
+        </div>
+    </div>
+
+    <!-- Modal -->
+    {% block modal %}{% endblock modal %}
+
+    <!-- bundle -->
+    <script src="{% static 'dashboard/js/app.js' %}"></script>
+    {% block bundle %}{% endblock bundle %}
+
+    <!-- third party js -->
+    <script src="{% static 'dashboard/js/vendor/Chart.bundle.min.js' %}"></script>
+	<script src="{% static 'dashboard/js/vendor/dragula.min.js' %}"></script>
+	<script src="{% static 'dashboard/js/ui/component.dragula.js' %}"></script>
+
+    {% block third_party %}{% endblock third_party %}
+    <!-- third party js ends -->
+
+    {% block app_js_bottom %}
+    {% endblock app_js_bottom %}
+
+    <!-- demo app -->
+    <script src="{% static 'dashboard/js/pages/demo.dashboard.js' %}"></script>
+    <!-- end demo js-->
+  </body>
+</html>
