@@ -14,6 +14,7 @@ git commit -m test.html로 github에 push
 Buildblock Property, Commercial Property 페이지에서 제목 옆에 콤보상자처럼
 검색 상자를 만들 구상중. 해당 페이지는 buildblock_property_list.html파일. 
 * [ ] 파이참에서 터미널 입력으로 git amend하기. 
+여기서 git commit -m ""말고 한번에 왼쪽 commit 버튼처럼 커밋하는 방법 찾기
 * [ ] 3000포트에 매니저 버튼 생기게 권한 부여하기
 
 공부한 내용
