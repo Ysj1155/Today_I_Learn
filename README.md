@@ -15,9 +15,10 @@ Buildblock Property, Commercial Property 페이지에서 제목 옆에 콤보상
 검색 상자를 만들 구상중. 해당 페이지는 buildblock_property_list.html파일. 
 * [ ] 파이참에서 터미널 입력으로 git amend하기. 
 여기서 git commit -m ""말고 한번에 왼쪽 commit 버튼처럼 커밋하는 방법 찾기
-* [ ] 3000포트에 매니저 버튼 생기게 권한 부여하기  
+* [x] 3000포트에 매니저 버튼 생기게 권한 부여하기  
 <img src="..%2F..%2FDesktop%2Fevidence.png" width="100" height="200"/>  
-PM에 대한 권한 부여 문제를 해결 필요  
+PM에 대한 권한 부여 문제를 해결 필요. admin 페이지 안에서 권한 부여하면 다음 
+화면이 나오는게 맞다고 하시니 내일까지 도전하는거로. 
 
 공부한 내용
 ---------
