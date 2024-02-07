@@ -13,6 +13,8 @@ git commit -m test.html로 github에 push
 * [ ] 내부 페이지 검색 기능을 위해서 무얼 알아야 되나 파악하기  
 Buildblock Property, Commercial Property 페이지에서 제목 옆에 콤보상자처럼
 검색 상자를 만들 구상중. 해당 페이지는 buildblock_property_list.html파일. 
+* [ ] 파이참에서 터미널 입력으로 git amend하기. 
+* [ ] 3000포트에 매니저 버튼 생기게 권한 부여하기
 
 공부한 내용
 ---------
