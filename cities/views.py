@@ -5,7 +5,10 @@ from django.db.models import Q # new
 
 # Create your views here.
 class HomePageView(TemplateView):
-    template_name= 'home.html'
+    template_name = 'home.html'
+def home(request):
+    cities = City.objects
+    return render(request, 'home.html', {'cities': cities})
 
 class SearchResultsView(ListView):
     model = City

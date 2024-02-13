@@ -3,5 +3,11 @@
 <!-- Search Form -->
 <form action="{% url 'search_results' %}" method="get">
     <input name="q" type="text" placeholder="Search..."><br>
-    <button name="검색">검색</button>
+    <button> search</button>
 </form>
+<td>
+    {% for City in cities.all %}
+    {{City.name}}
+    {{City.state}}
+    {% endfor %}
+</td>
