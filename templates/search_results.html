@@ -6,10 +6,7 @@
     <li>
       {{ city.name }}, {{ city.state }}
     </li>
+  {% empty %}
+    <li><big><h1>no data</h1></big></li>
   {% endfor %}
 </ul>
-<tr>
-  {% if city not in object_list %}
-  <big><h1>no data</h1></big>
-  {% endif %}
-</tr>

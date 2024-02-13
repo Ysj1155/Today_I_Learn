@@ -7,7 +7,7 @@ from django.db.models import Q # new
 class HomePageView(TemplateView):
     template_name = 'home.html'
 def home(request):
-    cities = City.objects
+    cities = City.objects.all()
     return render(request, 'home.html', {'cities': cities})
 
 class SearchResultsView(ListView):
