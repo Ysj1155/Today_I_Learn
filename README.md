@@ -18,7 +18,8 @@ Buildblock Property, Commercial Property 페이지에서 제목 옆에 콤보상
 * [x] 파이참에서 터미널 입력으로 git push하기. 
 여기서 git commit -m "파일 이름"으로 커밋
 * [x] 3000포트에 매니저 버튼 생기게 권한 부여하기  
-<img src="..%2F..%2FDesktop%2Fevidence.png" width="50" height="100"/>  
+<img src="..%2F..%2FDesktop%2Fevidence.png" width="50" height="100"/>
+위 사진은 로컬에 저장된 사진인데 안보인다. 이문장은 pull 실험용 문장.
 PM에 대한 권한 부여 문제를 해결 필요. admin 페이지 안에서 권한 부여하면 다음 
 화면이 나오는게 맞다고 하시니 내일까지 도전하는거로. 
 
