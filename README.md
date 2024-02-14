@@ -68,7 +68,8 @@ buildblock_property_list.html에서 <t body>안의 buildblock_property.property_
 장고 ORM(Object Relational Mapper). 객체 지향적인 방법을 사용하여 데이터베이스의 데이터를 쉽게 조작. 조건 키워드에서
 1. model.objects.filter(name__contains='Welcome')
 2. model.objects.filter(name__icontains='Welcome')
-에서 1번은 문자 검색이 가능하고 2번은 대소문자를 구분하지 않는다고 한다. 
+에서 1번은 문자 검색이 가능하고 2번은 대소문자를 구분하지 않는다고 한다.  
+
 Get은 한개의 데이터만 추출하는 함수고 Filter는 여러개의 데이터를 추출할 때 쓰는 함수다. property_basic.full_address
 데이터만 필요하니까 get함수로 이 데이터를 추출해서 보여주는 함수 만들면 되지 않을까. 지금 고민하는건 필터 함수를 어느 html파일에
 넣어야 원하는 대로 작동할까
