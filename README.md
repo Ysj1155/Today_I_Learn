@@ -53,6 +53,22 @@ admin 페이지로 진입. 3000포트의 매니저 block의 부동산 상품 페
 * [ ] 이전 페이지 만드는 작업 이어서 진행중. admin 페이지에 저장된 데이터들을 home화면에 전부 보이는 방법 찾는중. 
 일단 틀린 정보 입력했을 때 No Data 띄우기까지 함. null 값하고 space만 입력했을때에도 노데이터 띄우게 수정 필요. 
 홈페이지 호스트주소/home 하면 화면이 안띄워지기 시작하는데 이슈 보완 필요하다 생각. home 화면에 city 리스트 띄우는거만 되면 
-과제는 완료.
+과제는 완료. 일단 double space는 no data가 정상적으로 출력된다. null값을 입력 했을 때 
+전체 리스트가 나오는건 어쩔 수 없는건가 싶다. 
 * [x] buildblock github의 최근 내용 pull. 준경님 3개월 매물 관련 pr이 업데이트 안된 이전 버전으로 pull되어 
 최신화 방법 찾는중. 우선 git pull "주소"로 pull 진행함.
+
+# 5. 2/14 
+*[ ] administrator Ordering 작업 스타트. Buildblock Property의 매물 검색을 위한 Search box 만들어서 검색 
+도와주는게 이번 업무의 목적. 페이지도 24page로 많아 매물 찾는게 힘들다라는게 불편 포인트. 추가로 type별로 6개 분류가 있는데
+Tread Class에서 Type을 콤보상자로 분류되게 하는게 second 목표. Q함수를 이용해 필터 작업하는게 키포인트로 보인다.    
+buildblock_property_list.html에서 <t body>안의 buildblock_property.property_basic.full_address가 
+주소의 객체인거로 파악. 이 객체를 Q함수로 필터링하려면 무슨 지식이 필요할까  
+
+장고 ORM(Object Relational Mapper). 객체 지향적인 방법을 사용하여 데이터베이스의 데이터를 쉽게 조작. 조건 키워드에서
+1. model.objects.filter(name__contains='Welcome')
+2. model.objects.filter(name__icontains='Welcome')
+에서 1번은 문자 검색이 가능하고 2번은 대소문자를 구분하지 않는다고 한다. 
+Get은 한개의 데이터만 추출하는 함수고 Filter는 여러개의 데이터를 추출할 때 쓰는 함수다. property_basic.full_address
+데이터만 필요하니까 get함수로 이 데이터를 추출해서 보여주는 함수 만들면 되지 않을까. 지금 고민하는건 필터 함수를 어느 html파일에
+넣어야 원하는 대로 작동할까
