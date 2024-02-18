@@ -1,20 +1,23 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView, ListView
 from .models import City
-from django.db.models import Q # new
+from django.db.models import Q
 
 # Create your views here.
-class HomePageView(TemplateView):
-    template_name = 'home.html'
-def home(request):
-    cities = City.objects.all()
-    return render(request, 'home.html', {'cities': cities})
+class CityListView(ListView):
+    model = City
+    context_object_name = 'object_list'
+    template_name = 'cities.html'
+class HomePageView(ListView):
+    model = City
+    context_object_name = 'object_list'
+    template_name= 'home.html'
 
 class SearchResultsView(ListView):
     model = City
     template_name = 'search_results.html'
 
-    def get_queryset(self): # new
+    def get_queryset(self):  # new
         query = self.request.GET.get('q')
         object_list = City.objects.filter(
             Q(name__icontains=query) | Q(state__icontains=query)

@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '7o!nf*ekc4pn!a3)eoe@%)#b)8xld0_r0t=1x5_29jbwwv_^d^'
+SECRET_KEY = 'zfn^2_5hd8rh-#t(8e&@&=4=*hh_nernq9r&+gj7h$z3x72j!y'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'cities.apps.CitiesConfig', # new
+    'cities.apps.CitiesConfig', #new
 ]
 
 MIDDLEWARE = [
@@ -55,7 +55,7 @@ ROOT_URLCONF = 'citysearch_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR, 'templates'], #new
+        'DIRS': [os.path.join(BASE_DIR, 'templates')], #new
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

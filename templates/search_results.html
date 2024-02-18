@@ -1,12 +1,13 @@
-<!-- templates/search_results.html -->
-<h1>Search Results</h1>
-
+<!-- Search Results -->
+<h2>Search Result</h2>
 <ul>
-  {% for city in object_list %}
-    <li>
-      {{ city.name }}, {{ city.state }}
-    </li>
-  {% empty %}
-    <li><big><h1>no data</h1></big></li>
-  {% endfor %}
+  {% if object_list %}
+    {% for city in object_list %}
+      <li>
+        {{ city.name }} - {{ city.state }}
+      </li>
+    {% endfor %}
+  {% else %}
+    <li><h1>no data</h1></li>
+  {% endif %}
 </ul>

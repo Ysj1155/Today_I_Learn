@@ -1,24 +1,40 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>City Search Engine</title>
-</head>
-<body>
-
 <h1>City Search Engine</h1>
 
+<!-- City Data -->
+    <div class="city-data">
+        <h2>도시 목록</h2>
+        <ul>
+        {% for city in object_list %}
+            <li>
+                {{ city.name }} - {{ city.state }}
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+
 <!-- Search Form -->
-<form action="{% url 'search_results' %}" method="get">
-    <input name="q" type="text" placeholder="Search..."><br>
-    <button>Search</button>
+<form id="searchForm" action="/search" method="get">
+    <input id="searchInput" name="q" type="text" placeholder="Search...">
+    <button type="submit">검색</button>
 </form>
 
-<!-- City List -->
-<ul>
-    {% for city in cities %}
-    <li>{{ city.name }} - {{ city.state }}</li>
-    {% endfor %}
-</ul>
+<!-- Search Results -->
+    <div id="searchResults"></div>
+    <script>
+        function handleSearch(event) {
+            event.preventDefault();
 
-</body>
-</html>
+            var searchInput = document.getElementById("searchInput").value;
+
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+                    document.getElementById("searchResults").innerHTML = xhr.responseText;
+                }
+            };
+            xhr.open("GET", "/search?q=" + searchInput, true);
+            xhr.send();
+        }
+
+        document.getElementById("searchForm").addEventListener("submit", handleSearch);
+    </script>

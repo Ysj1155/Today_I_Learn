@@ -73,3 +73,15 @@ buildblock_property_list.html에서 <t body>안의 buildblock_property.property_
 Get은 한개의 데이터만 추출하는 함수고 Filter는 여러개의 데이터를 추출할 때 쓰는 함수다. property_basic.full_address
 데이터만 필요하니까 get함수로 이 데이터를 추출해서 보여주는 함수 만들면 되지 않을까. 지금 고민하는건 필터 함수를 어느 html파일에
 넣어야 원하는 대로 작동할까
+
+# 6. 2/15
+"*args"와 "**kwargs"  
+arguments와 keyword arguments의 약어. *args는 개수와 상관 없이 모든 입력 인수를 튜플로 변환해주는 변수. 
+**kwargs는 모든 key=value 형태의 입력인수를 딕셔너리로 변환해주는 변수.   
+
+"'<"form">"태그의 enctype 속성은 form data가 서버로 제출될 때 해당 데이터가 인코딩되는 방법 명시하는 기능.
+<"form>" 요소의 method 속성값이 “post”인 경우에만 사용.  
+
+html에서 csrf_token은 CSRF(Cross Site Request Forgery,user가 자신의 의지와 무관하게 공격자가 의도한 행동을 특정
+웹사이트에 요청하게 하는 공격; 이미 사용자가 접속한 상황에서 요청값을 조작하여 사용자가 원하지 않는 action을 보내 웹 어플리케이션을 악용)
+를 방지하기 위해 django에서 제공하는 기능. 
