@@ -1,13 +1,6 @@
 # Today_I_Learn
 하루 배운 내용 정리하기
 
-# 1. 2/6 할 일과 한 일
-* [x] git이랑 익숙해지기  
-터미널에 git status 입력해서 commit할 변경 상태 확인.  
-commit전에 git add . 로 모든 변경사항 추가  
-git commit -m test.html로 github에 push  
-깃허브에서 작성했던 위 내용을 파이참 내부에서 git pull로 업데이트 해보기.  
-
 # 2. 2/7 할 일과 한일
 * [ ] 내부 페이지 검색 기능을 위해서 무얼 알아야 되나 파악하기  
 Buildblock Property, Commercial Property 페이지에서 제목 옆에 콤보상자처럼
@@ -35,35 +28,6 @@ PM에 대한 권한 부여 문제를 해결 필요. admin 페이지 안에서 �
 초기 페이지 로드할 때 서버에서 전부 랜더링 된 HTML을 받아 화면에 띄워 
 유저에게 빠른 제공 가능. 3000 포트와 8000포트 사이에서 API통해 통신.  
 
-# 3. 2/8 한 일과 할 일 
-* [ ] Homework 검색 페이지 만들어서 결과 보는 페이지 제작하기. 매물들 리스트에서 밑에 검색 박스에 검색 
-버튼하고 해서 조건 안되면 안띄우고 조건 맞으면 매물 띄우는 그런 페이지.  
- Django Search Tutorial 진행중. 작업 끝나면 빌드블록 property 활용해서 숙제 진행해볼 예정 
-한 페이지 내 제목 밑에 리스트가 나열되고 그 밑에는 검색박스와 검색버튼. 검색박스에 일부를 입력해 버튼을 누르면 
-같은 페이지에서 필터링된 결과가 검색박스 밑에 뜨는 페이지. 만약 검색결과가 없으면 없다고 알려주는 기능으로. 
-더 나아가 빌드블럭 데이터를 가져와서 같은 방법으로 페이지 만들기까지.
-
-* [x] admin 페이지 매니저 권한 습득, 진입 해보기.   
- 정답은 profile managers에서 권한 부여하는 것이다. 준경님 도움 받아 권한 받음. buildblock.io/asibi로 
-admin 페이지로 진입. 3000포트의 매니저 block의 부동산 상품 페이지에 접근. 내가 검색 박스를 만들 매니저 솔루션의 
-매물 페이지 확인. 
-
-# 4. 2/13 한 일과 할 일
-* [ ] 이전 페이지 만드는 작업 이어서 진행중. admin 페이지에 저장된 데이터들을 home화면에 전부 보이는 방법 찾는중. 
-일단 틀린 정보 입력했을 때 No Data 띄우기까지 함. null 값하고 space만 입력했을때에도 노데이터 띄우게 수정 필요. 
-홈페이지 호스트주소/home 하면 화면이 안띄워지기 시작하는데 이슈 보완 필요하다 생각. home 화면에 city 리스트 띄우는거만 되면 
-과제는 완료. 일단 double space는 no data가 정상적으로 출력된다. null값을 입력 했을 때 
-전체 리스트가 나오는건 어쩔 수 없는건가 싶다. 
-* [x] buildblock github의 최근 내용 pull. 준경님 3개월 매물 관련 pr이 업데이트 안된 이전 버전으로 pull되어 
-최신화 방법 찾는중. 우선 git pull "주소"로 pull 진행함.
-
-# 5. 2/14 
-*[ ] administrator Ordering 작업 스타트. Buildblock Property의 매물 검색을 위한 Search box 만들어서 검색 
-도와주는게 이번 업무의 목적. 페이지도 24page로 많아 매물 찾는게 힘들다라는게 불편 포인트. 추가로 type별로 6개 분류가 있는데
-Tread Class에서 Type을 콤보상자로 분류되게 하는게 second 목표. Q함수를 이용해 필터 작업하는게 키포인트로 보인다.    
-buildblock_property_list.html에서 <t body>안의 buildblock_property.property_basic.full_address가 
-주소의 객체인거로 파악. 이 객체를 Q함수로 필터링하려면 무슨 지식이 필요할까  
-
 장고 ORM(Object Relational Mapper). 객체 지향적인 방법을 사용하여 데이터베이스의 데이터를 쉽게 조작. 조건 키워드에서
 1. model.objects.filter(name__contains='Welcome')
 2. model.objects.filter(name__icontains='Welcome')
@@ -85,10 +49,5 @@ html에서 csrf_token은 CSRF(Cross Site Request Forgery,user가 자신의 의�
 웹사이트에 요청하게 하는 공격; 이미 사용자가 접속한 상황에서 요청값을 조작하여 사용자가 원하지 않는 action을 보내 웹 어플리케이션을 악용)
 를 방지하기 위해 django에서 제공하는 기능. 
 
-# 7. 2/20
-깃허브 pr 올리기  
-git add로 바꿀 파일 안전하게 하나씩 지정해서 올리기 pre-commit run으로 다른 사람들이랑 쓰는 
-문법같은거 싱크 맞는지 확인하고 git branch로 각 올릴 pr마다 branch를 sjYoon/하는 일 
-이런 식으로 새로 파서 이 브랜치를 빌드블록으로 push하기
 
 
