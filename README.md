@@ -1,5 +1,10 @@
 # Today_I_Learn
-하루 배운 내용 정리하기
+git
+[git-strategy](git-strategy.md)
+
+python
+
+
 
 # 2. 2/7 할 일과 한일
 * [ ] 내부 페이지 검색 기능을 위해서 무얼 알아야 되나 파악하기  
