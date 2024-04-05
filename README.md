@@ -1,7 +1,7 @@
 # Today_I_Learn
 git
 
-[git-strategy](https://github.com/Ysj1155/Today_I_Learn/blob/main/git/git-branch-strategy.md)
+[git-strategy](git/git-branch-strategy.md)
 
 
 python
