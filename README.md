@@ -6,7 +6,7 @@ git
 
 python
 
-[리스트, 셋, 튜플, 딕셔너리](python/List, Set, Tuple, Dictionary)
+[리스트, 셋, 튜플, 딕셔너리](python/List,Set,Tuple,Dictionary)
 
 
 # 2. 2/7 할 일과 한일
