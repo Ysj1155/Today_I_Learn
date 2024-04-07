@@ -2,7 +2,7 @@
 
 깃 브랜치 전략은 Git branch를 효과적으로 관리하기 위한 workflow다. 
 
-![Git-Flow](./git/git-flow.png)
+![Git-Flow](git/git-flow.png)
 
 master 브랜치는 소비자와 직접적으로 상호작용하는 최종 브랜치이다. 맨 왼쪽에 feature branches는 프로젝트의 개개인 참여자들이 자신의 로컬에서 작업한 내용을 Pull Request하는 브랜치다.
 develop 브랜치는 master 브랜치와 거의 동일한 상태를 유지하는 브랜치로 master 브랜치에 내용을 각 local에서 작업한 커밋들을 올리기 전에 확인하는 브랜치로 사용할 수 있다.
