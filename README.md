@@ -8,6 +8,11 @@ python
 
 [리스트, 셋, 튜플, 딕셔너리](python/List,Set,Tuple,Dictionary.md)
 
+
+WEB
+
+[SSR, CSR](WEB/SSR,CSR)
+
 # 6. 2/15
 "*args"와 "**kwargs"  
 arguments와 keyword arguments의 약어. *args는 개수와 상관 없이 모든 입력 인수를 튜플로 변환해주는 변수. 
