@@ -9,8 +9,5 @@ python
 
 WEB  
 [SSR, CSR](WEB/SSR,CSR)  
-[HTTP 상태 코드](WEB/HTTP상태코드)
-
-
-
-
+[HTTP 상태 코드](WEB/HTTP상태코드)  
+[VPN](WEB/VPN)
