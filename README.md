@@ -9,19 +9,6 @@ python
 [리스트, 셋, 튜플, 딕셔너리](python/List,Set,Tuple,Dictionary.md)
 
 
-# 2. 2/7 할 일과 한일
-* [ ] 내부 페이지 검색 기능을 위해서 무얼 알아야 되나 파악하기  
-Buildblock Property, Commercial Property 페이지에서 제목 옆에 콤보상자처럼
-검색 상자를 만들 구상중. 해당 페이지는 buildblock_property_list.html파일.  
-* [ ] Homework 검색 페이지 만들어서 결과 보는 페이지 제작하기. 매물들 리스트에서 밑에 검색 박스에 검색 
-버튼하고 해서 조건 안되면 안띄우고 조건 맞으면 매물 띄우는 그런 페이지
-* [x] 파이참에서 터미널 입력으로 git push하기. 
-여기서 git commit -m "파일 이름"으로 커밋
-* [x] 3000포트에 매니저 버튼 생기게 권한 부여하기  
-<img src="..%2F..%2FDesktop%2Fevidence.png" width="50" height="100"/>
-위 사진은 로컬에 저장된 사진인데 안보인다. 이문장은 pull 실험용 문장.
-PM에 대한 권한 부여 문제를 해결 필요. admin 페이지 안에서 권한 부여하면 다음 
-화면이 나오는게 맞다고 하시니 내일까지 도전하는거로. 
 
 공부한 내용
 ---------
