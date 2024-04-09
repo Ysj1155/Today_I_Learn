@@ -39,6 +39,7 @@ second : World
 
 하나의 def 안에 *args와 **kwargs를 동시에 쓸 수 있다.  
 함수 선언 시 *args와 **kwargs를 같이 사용하는 경우, *args가 무조건 **kwargs보다 앞에 선언되어야 한다.  
+그렇지 않으면 SyntaxError.  
 함수 선언 시 non-default parameter (default 값이 없는 파라미터)가 default parameter (default 값이 있는 파라미터)보다 앞에 와야 하는 것과 동일하게 생각하면 된다.
 ```python
 def print_args(*args, **kwargs):
