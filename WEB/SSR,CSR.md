@@ -1,9 +1,14 @@
->local host 3000포트: 프론트쪽. CSR(Client Side Rendering).  
+# SSR과 CSR
+## CSR(Client Side Rendering)
+
+렌더링이 클라이언트 쪽에서 일어난다. 서버는 요청을 받으면 클라이언트에서 HTML과 JS를 보내주고 클라이언트는 그것을 받아 렌더링을 한다. 
+![CSR의 단계](./WEB/csr.png)  
 클라의 웹 브라우저에서 랜더링 일어남. 서버는 클라에 최소한의 HTML을 보낸다. 자바스크립트
 파일이 로드되며 컨텐츠가 동적으로 랜더링. 초기 로딩이 빠르진 않지만 콘텐츠를 제공하는데 
 효과적. 원하는 내용만 업데이트가 가능하기 때문에 프론트 쪽에서 유용하게 쓰는건가
 
->local host 8000포트: 백엔드쪽. SSR(Server Side Rendering).  
+## SSR(Server Side Rendering)
+>local host 8000포트: 백엔드쪽.
 서버에서 초기 HTML 생성해서 클라에 전송.
 클라의 요청 마다 서버에서 데이터 가져와서 완성된 HTML 생성하고 이를 클라에 응답.
 초기 페이지 로드할 때 서버에서 전부 랜더링 된 HTML을 받아 화면에 띄워 
