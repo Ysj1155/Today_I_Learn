@@ -12,5 +12,5 @@
 - [HTTP 상태 코드](WEB/HTTP상태코드.md)  
 - [VPN](WEB/VPN.md)  
 
-## Computer_structure
--[컴퓨터 구조]()
+## Computer_Structure
+-[컴퓨터 구조](컴퓨터_구성_요소.md)
