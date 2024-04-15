@@ -6,7 +6,7 @@ Supporting 브랜치는 필요에 의해 생성되고 역할을 다하면 삭제
 이 Supporting 브랜치 덕분에 프로젝트의 병렬적인 업무가 가능하다.   
 
 깃 flow
-> ![Git-Flow](./git-flow.png)
+> ![Git-Flow](/images/git-flow.png)
 
 ## Master 브랜치
 제픔으로 출시될 수 있는 브랜치   
