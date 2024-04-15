@@ -13,4 +13,4 @@
 - [VPN](WEB/VPN.md)  
 
 ## Computer_Structure
--[컴퓨터 구조](컴퓨터_구성_요소.md)
+-[컴퓨터 구조](컴퓨터구성요소.md)
