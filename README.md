@@ -13,4 +13,5 @@
 - [VPN](WEB/VPN.md)  
 
 ## Computer_Structure
-- [컴퓨터 구조](Computer_Structure/컴퓨터구성요소.md)
+- [컴퓨터 구성요소](Computer_Structure/컴퓨터구성요소.md)
+- [소스코드와 명령어](Computer_Structure/소스코드와명령어.md)
