@@ -16,3 +16,5 @@
 - [컴퓨터 구성요소](Computer_Structure/컴퓨터구성요소.md)
 - [소스코드와 명령어](Computer_Structure/소스코드와명령어.md)
 - [스택과 큐](Computer_Structure/스택과큐.md)
+- [ALU와 제어장치](Computer Structure/ALU와제어장치.md)
+- 
