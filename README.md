@@ -17,4 +17,5 @@
 - [소스코드와 명령어](Computer_Structure/소스코드와명령어.md)
 - [스택과 큐](Computer_Structure/스택과큐.md)
 - [ALU와 제어장치](Computer_Structure/ALU와제어장치.md)
-- 
+- [레지스터와 레지스터를 이용한 주소 지정 방식](Computer_Structure/레지스터.md)
+
