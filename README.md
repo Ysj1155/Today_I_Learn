@@ -21,3 +21,4 @@
 - [명령어 사이클과 인터럽트](Computer_Structure/명령어사이클과인터럽트.md)
 - [CPU와 스레드](Computer_Structure/CPU와스레드.md)
 - [명령어 병렬 처리 기법](Computer_Structure/명령어병렬처리기법.md)
+- [CISC와 RISC](Computer_Structure/CISC와RISC.md)
