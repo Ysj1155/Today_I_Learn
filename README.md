@@ -25,3 +25,4 @@
 - [RAM의 특징과 종류](Computer_Structure/RAM의특징과종류.md)
 - [메모리의 주소 공간](Computer_Structure/메모리의주소공간.md)
 - [캐시 메모리](Computer_Structure/캐시메모리.md)
+- [보조 기억 장치](Computer_Structure/보조기억장치.md)
