@@ -28,3 +28,4 @@
 - [보조 기억 장치](Computer_Structure/보조기억장치.md)
 - [RAID의 정의와 종류](Computer_Structure/RAID의정의와종류.md)
 - [장치 컨트롤러와 장치 드라이버](Computer_Structure/장치컨트롤러와장치드라이버.md)
+- [다양한 입출력 방법](Computer_Structure/다양한입출력방법.md)
