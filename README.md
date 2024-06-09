@@ -30,3 +30,4 @@
 - [장치 컨트롤러와 장치 드라이버](Computer_Structure/장치컨트롤러와장치드라이버.md)
 - [다양한 입출력 방법](Computer_Structure/다양한입출력방법.md)
 - [운영체제의 큰 그림](Computer_Structure/운영체제의큰그림.md)
+- [프로세스 개요](Computer_Structure/프로세스개요.md)
