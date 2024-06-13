@@ -34,3 +34,4 @@
 - [프로세스 상태와 계층 구조](Computer_Structure/프로세스상태와계층구조.md)
 - [스레드](Computer_Structure/스레드.md)
 - [CPU 스케줄링 개요](Computer_Structure/CPU스케줄링개요.md)
+- [CPU 스케줄링 알고리즘](Computer_Structure/CPU스케줄링알고리즘.md)
