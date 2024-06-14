@@ -35,3 +35,4 @@
 - [스레드](Computer_Structure/스레드.md)
 - [CPU 스케줄링 개요](Computer_Structure/CPU스케줄링개요.md)
 - [CPU 스케줄링 알고리즘](Computer_Structure/CPU스케줄링알고리즘.md)
+- [동기화](Computer_Structure/동기화.md)
