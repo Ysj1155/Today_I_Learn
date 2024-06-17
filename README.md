@@ -38,3 +38,4 @@
 - [동기화](Computer_Structure/동기화.md)
 - [동기화 기법](Computer_Structure/동기화기법.md)
 - [교착 상태](Computer_Structure/교착상태.md)
+- [교착 상태 해결 방법](Computer_Structure/교착상태해결방법.md)
