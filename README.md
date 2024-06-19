@@ -40,3 +40,4 @@
 - [교착 상태](Computer_Structure/교착상태.md)
 - [교착 상태 해결 방법](Computer_Structure/교착상태해결방법.md)
 - [연속 메모리 할당](Computer_Structure/연속메모리할당.md)
+- [페이징을 통한 가상 메모리 관리](Computer_Structure/페이징을통한가상메모리관리.md)
