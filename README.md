@@ -43,3 +43,4 @@
 - [페이징을 통한 가상 메모리 관리](Computer_Structure/페이징을통한가상메모리관리.md)
 - [페이지 교체와 프레임 할당](Computer_Structure/페이지교체와프레임할당.md)
 - [파일과 디렉토리](Computer_Structure/파일과디렉토리.md)
+- [파일 시스템](Computer_Structure/파일시스템.md)
